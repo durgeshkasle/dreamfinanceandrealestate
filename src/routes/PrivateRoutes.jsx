@@ -9,6 +9,7 @@ import NotFoundPage from '../pages/ErrorhandlerPages/NotFoundPage';
 // Pages
 import DashboardPage from '../pages/DashboardPage';
 import AboutPage from '../pages/AboutPage';
+import TechExpertisePage from '../pages/TechExpertisePage';
 
 const PrivateRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const PrivateRoutes = () => {
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/tech-expertise" element={<TechExpertisePage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
