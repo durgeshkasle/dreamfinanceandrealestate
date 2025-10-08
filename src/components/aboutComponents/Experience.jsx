@@ -26,7 +26,6 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 
 const ExperienceContainer = styled(Box)(({ theme }) => ({
-  minHeight: '100vh',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',

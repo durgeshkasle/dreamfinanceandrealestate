@@ -3,7 +3,7 @@ import { Box, Chip, styled, useTheme, Typography } from '@mui/material';
 
 // ===== Styled Component =====
 const Container = styled(Box)(({ theme }) => ({
-  padding: '100px 24px',
+  padding: '50px 24px',
   [theme.breakpoints.down('sm')]: {
     padding: '60px 16px',
   },

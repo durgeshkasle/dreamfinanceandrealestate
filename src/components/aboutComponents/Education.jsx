@@ -16,7 +16,6 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 const EducationContainer = styled(Box)(({ theme }) => ({
-  minHeight: '100vh',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',

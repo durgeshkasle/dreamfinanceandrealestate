@@ -45,7 +45,6 @@ export const PrivateLayout = () => {
       >
         <main
           style={{
-            minHeight: 'calc(100vh - 90px)',
             marginBottom: '100px',
           }}
         >

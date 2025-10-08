@@ -8,14 +8,13 @@ import profileImg from '../../assets/images/profileImg1.png';
 
 // ===== Styled Components =====
 const HeroContainer = styled(Box)(({ theme }) => ({
-  minHeight: '100vh',
   display: 'flex',
   width: '100%',
   alignItems: 'center',
   justifyContent: 'center',
   padding: theme.spacing(6, 2),
   [theme.breakpoints.up('md')]: {
-    padding: theme.spacing(5, 3),
+    padding: theme.spacing(2, 0),
   },
 }));
 
