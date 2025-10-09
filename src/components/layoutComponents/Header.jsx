@@ -64,7 +64,7 @@ const Header = () => {
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const menuItems = [
-    { label: 'Home', path: '/' },
+    { label: 'Home', path: '/home' },
     { label: 'About', path: '/about' },
     { label: 'Projects', path: '/projects' },
     { label: 'Skills', path: '/tech-expertise' },
