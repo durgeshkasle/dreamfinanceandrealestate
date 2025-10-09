@@ -1,5 +1,8 @@
 import React from 'react';
-import { Box, Chip, styled, useTheme, Typography } from '@mui/material';
+import Box from '@mui/material/Box';
+import Chip from '@mui/material/Chip';
+import Typography from '@mui/material/Typography';
+import { styled, useTheme } from '@mui/material/styles';
 
 // ===== Styled Component =====
 const Container = styled(Box)(({ theme }) => ({
@@ -17,23 +20,9 @@ const TagCloudWrapper = styled(Box)(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-// ===== Hardcoded Skills =====
-const skillsData = [
-  'React.js',
-  'Next.js',
-  'Node.js',
-  'MongoDB',
-  'Redux Toolkit',
-  'Material UI',
-  'Tailwind CSS',
-  'TypeScript',
-  'Framer Motion',
-  'Axios / Fetch',
-  'Firebase',
-  'Chakra UI',
-];
-
-const SkillTagCloud = () => {
+// ======= Component =========
+export default function SkillTagCloud(props) {
+  const { skillTagCloudData = [] } = props;
   const theme = useTheme();
 
   return (
@@ -52,7 +41,7 @@ const SkillTagCloud = () => {
         </Typography>
 
         <TagCloudWrapper>
-          {skillsData.map((skill) => (
+          {skillTagCloudData.map((skill) => (
             <Chip
               key={skill}
               label={skill}
@@ -74,6 +63,4 @@ const SkillTagCloud = () => {
       </Box>
     </Container>
   );
-};
-
-export default SkillTagCloud;
+}

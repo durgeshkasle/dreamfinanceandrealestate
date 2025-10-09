@@ -1,5 +1,10 @@
 import React from 'react';
-import { Box, Typography, LinearProgress, styled, useTheme } from '@mui/material';
+
+// @mui Components :-
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import LinearProgress from '@mui/material/LinearProgress';
+import { styled, useTheme } from '@mui/material/styles';
 
 // ===== Styled Component =====
 const Container = styled(Box)(({ theme }) => ({
@@ -33,20 +38,9 @@ const ProgressWrapper = styled(Box)(({ theme }) => ({
   marginBottom: '16px',
 }));
 
-// ===== Skill Data =====
-const skillsData = [
-  { skill: 'React.js', level: 90 },
-  { skill: 'Next.js', level: 85 },
-  { skill: 'Node.js', level: 80 },
-  { skill: 'MongoDB', level: 75 },
-  { skill: 'Material UI', level: 88 },
-  { skill: 'Redux Toolkit', level: 82 },
-  { skill: 'TypeScript', level: 70 },
-  { skill: 'Framer Motion', level: 65 },
-  { skill: 'Axios / Fetch', level: 85 },
-];
-
-const SkillProgress = () => {
+// ========= Component =========
+export default function SkillProgress(props) {
+  const { skillsData = [] } = props;
   const theme = useTheme();
 
   return (
@@ -95,6 +89,4 @@ const SkillProgress = () => {
       </SkillCard>
     </Container>
   );
-};
-
-export default SkillProgress;
+}
