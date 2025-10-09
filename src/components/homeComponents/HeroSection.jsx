@@ -150,14 +150,14 @@ export default function HeroSection() {
   const typed = useTypewriter(roles, 90, 1400);
 
   return (
-    <Box sx={{ py: { xs: 2, md: 15} }}>
+    <Box sx={{ py: { xs: 2, md: 15 } }}>
       <Grid
         container
         spacing={5}
         sx={{
           alignItems: 'center',
           justifyContent: { md: 'space-between', xs: 'center' },
-          padding: "0px 10px"
+          padding: '0px 10px',
         }}
       >
         {/* ==== Left Section ==== */}
@@ -181,7 +181,7 @@ export default function HeroSection() {
               sx={{
                 fontWeight: 800,
                 lineHeight: 1.1,
-                fontSize: {md:50, xs:45},
+                fontSize: { md: 50, xs: 45 },
                 mb: 4,
                 textAlign: { xs: 'left', md: 'left' },
                 background: `linear-gradient(90deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,

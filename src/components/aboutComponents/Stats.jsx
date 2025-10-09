@@ -1,18 +1,13 @@
-// src/components/about/Stats.jsx
 import React from 'react';
-import { Box, Typography, Grid, Paper } from '@mui/material';
+
+// @mui Components :-
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 
-// Icons
-import WorkIcon from '@mui/icons-material/Work';
-import CodeIcon from '@mui/icons-material/Code';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import SchoolIcon from '@mui/icons-material/School';
-import GroupIcon from '@mui/icons-material/Group';
-import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
-import TerminalIcon from '@mui/icons-material/Terminal';
-import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-
+// ========= Style Components ===========
 const StatsContainer = styled(Box)(({ theme }) => ({
   minHeight: '60vh',
   display: 'flex',
@@ -37,49 +32,9 @@ const StatCard = styled(Paper)(({ theme }) => ({
   },
 }));
 
-export default function Stats() {
-  const stats = [
-    {
-      icon: <WorkIcon color="primary" sx={{ fontSize: 40 }} />,
-      number: '2+',
-      label: 'Years Experience',
-    },
-    {
-      icon: <CodeIcon color="secondary" sx={{ fontSize: 40 }} />,
-      number: '4',
-      label: 'Full-Scale Projects Delivered',
-    },
-    {
-      icon: <EmojiEventsIcon sx={{ fontSize: 40, color: '#ffb400' }} />,
-      number: '3 mo',
-      label: 'Internship Experience',
-    },
-    {
-      icon: <SchoolIcon color="success" sx={{ fontSize: 40 }} />,
-      number: '2',
-      label: 'Professional Certifications',
-    },
-    {
-      icon: <GroupIcon color="info" sx={{ fontSize: 40 }} />,
-      number: '4',
-      label: 'Developers in My Team',
-    },
-    {
-      icon: <ThumbUpAltIcon color="success" sx={{ fontSize: 40 }} />,
-      number: '100%',
-      label: 'Client Satisfaction Rate',
-    },
-    {
-      icon: <TerminalIcon color="warning" sx={{ fontSize: 40 }} />,
-      number: '10+',
-      label: 'Technologies Mastered',
-    },
-    {
-      icon: <MilitaryTechIcon color="secondary" sx={{ fontSize: 40 }} />,
-      number: '5+',
-      label: 'Awards & Achievements',
-    },
-  ];
+// ========= Component ===========
+export default function Stats(props) {
+  const { stats = [] } = props;
 
   return (
     <StatsContainer id="stats">

@@ -1,20 +1,16 @@
-// src/components/about/Education.jsx
 import React from 'react';
-import {
-  Box,
-  Typography,
-  Grid,
-  Paper,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
-import SchoolIcon from '@mui/icons-material/School';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
+// @mui Components :-
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import { styled } from '@mui/material/styles';
+
+// ========== Style Components ==========
 const EducationContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
@@ -35,51 +31,9 @@ const EducationCard = styled(Paper)(({ theme }) => ({
   },
 }));
 
-export default function Education() {
-  const educationDetails = [
-    {
-      icon: <SchoolIcon color="primary" />,
-      title: 'Bachelor of Science (B.Sc.) in Information Technology',
-      institution: 'V.P.M R.Z Shah College, Mumbai, Maharashtra',
-      year: '2022 - 2025',
-    },
-    {
-      icon: <SchoolIcon color="primary" />,
-      title: 'Senior Secondary (Class XII), Central Board of Secondary Education (CBSE)',
-      institution: 'A.B.S International School & College',
-      year: '2020 - 2022',
-    },
-  ];
-
-  const certifications = [
-    {
-      icon: <WorkspacePremiumIcon color="secondary" />,
-      name: 'React.js Developer',
-      org: 'Tech Paathshala, Mumbai',
-      year: '2023',
-    },
-    {
-      icon: <WorkspacePremiumIcon color="success" />,
-      name: 'Node.js Developer',
-      org: 'Tech Paathshala, Mumbai',
-      year: '2024',
-    },
-  ];
-
-  const achievements = [
-    {
-      icon: <EmojiEventsIcon sx={{ color: '#ffb400' }} />,
-      text: 'Led a 5-member team to design & deploy a college website, increasing student engagement by 40%.',
-    },
-    {
-      icon: <EmojiEventsIcon sx={{ color: '#ffb400' }} />,
-      text: 'Promoted to Lead Intern after consistently outperforming peers in project delivery.',
-    },
-    {
-      icon: <EmojiEventsIcon sx={{ color: '#ffb400' }} />,
-      text: 'Successfully delivered 4 full-scale projects from development to deployment, ensuring client satisfaction.',
-    },
-  ];
+// ============= Component ==============
+export default function Education(props) {
+  const { educationDetails = [], certifications = [], achievements = [] } = props;
 
   return (
     <EducationContainer id="education">

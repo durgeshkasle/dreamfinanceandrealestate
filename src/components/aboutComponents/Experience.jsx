@@ -1,29 +1,16 @@
 import React from 'react';
-import {
-  Box,
-  Typography,
-  Grid,
-  Paper,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  useTheme,
-} from '@mui/material';
-import { styled } from '@mui/material/styles';
 
-// Icons
-import WorkIcon from '@mui/icons-material/Work';
-import CodeIcon from '@mui/icons-material/Code';
-import StarIcon from '@mui/icons-material/Star';
-import StorageIcon from '@mui/icons-material/Storage';
-import BugReportIcon from '@mui/icons-material/BugReport';
-import TimelineIcon from '@mui/icons-material/Timeline';
-import GroupWorkIcon from '@mui/icons-material/GroupWork';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import AssignmentIcon from '@mui/icons-material/Assignment';
+// @mui Components :-
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import { useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
 const ExperienceContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -42,63 +29,9 @@ const ExperienceCard = styled(Paper)(({ theme }) => ({
   width: '100%',
 }));
 
-export default function Experience() {
+export default function Experience(props) {
+  const { highlights = [] } = props;
   const theme = useTheme();
-
-  const highlights = [
-    {
-      text: 'Proficient in building scalable full-stack applications using React.js, Node.js, Express, and MongoDB with clean and maintainable code.',
-      icon: <CodeIcon color="primary" />,
-    },
-    {
-      text: 'Hands-on experience in developing REST APIs, implementing JWT authentication, and delivering secure backend solutions.',
-      icon: <WorkIcon color="secondary" />,
-    },
-    {
-      text: 'Strong problem-solving skills with expertise in clean architecture, modular coding practices, and performance optimization.',
-      icon: <StarIcon sx={{ color: '#ffb400' }} />,
-    },
-    {
-      text: 'Collaborated effectively with cross-functional teams, following Agile methodology to deliver high-quality applications on time.',
-      icon: <GroupWorkIcon color="info" />,
-    },
-    {
-      text: 'Developed reusable and optimized UI components, managing state efficiently with Redux Toolkit and RTK Query.',
-      icon: <AssignmentIcon color="success" />,
-    },
-    {
-      text: 'Enhanced database performance through query optimization and indexing, reducing application response times by 25%.',
-      icon: <StorageIcon color="warning" />,
-    },
-    {
-      text: 'Integrated AI-assisted tools such as Windsurf AI to improve code efficiency, reduce bugs, and accelerate development workflows.',
-      icon: <BugReportIcon color="error" />,
-    },
-    {
-      text: 'Delivered multiple production-ready modules and applications for enterprise-level projects, including V5 Global.',
-      icon: <RocketLaunchIcon color="primary" />,
-    },
-    {
-      text: 'Designed and built interactive analytics dashboards and data visualization features using Highcharts and Recharts.',
-      icon: <DashboardIcon color="secondary" />,
-    },
-    {
-      text: 'Led a 5-member team to design and deploy a college website, increasing student engagement by more than 40%.',
-      icon: <TimelineIcon color="info" />,
-    },
-    {
-      text: 'Recognized as Lead Intern for consistently outperforming peers and contributing to successful project deliveries.',
-      icon: <EmojiEventsIcon sx={{ color: '#ffb400' }} />,
-    },
-    {
-      text: 'Worked on diverse projects including MagicBus, MultiAct, TOMOR, and Jarvis Analytics, handling both frontend and backend roles.',
-      icon: <WorkIcon color="success" />,
-    },
-    {
-      text: 'Skilled in debugging, troubleshooting, and maintaining large-scale applications to ensure high uptime and client satisfaction.',
-      icon: <BugReportIcon color="secondary" />,
-    },
-  ];
 
   return (
     <ExperienceContainer id="experience">
