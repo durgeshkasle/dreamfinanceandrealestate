@@ -25,7 +25,7 @@ const AnimatedAppFooter = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'center',
   gap: '30px',
-  padding: '20px 0',
+  padding: '4px 0',
   '@keyframes fadeInDown': {
     '0%': { opacity: 0, transform: 'translateY(-20px)' },
     '100%': { opacity: 1, transform: 'translateY(0)' },

@@ -36,7 +36,7 @@ const ContactContainer = () => {
       title: 'LinkedIn',
       subtitle: 'Connect with me',
       icon: <LinkedInIcon fontSize="large" />,
-      onClick: () => window.open('https://www.linkedin.com/in/your-linkedin-id', '_blank'),
+      onClick: () => window.open('https://www.linkedin.com/in/shivank011/', '_blank'),
     },
   ];
 
@@ -59,6 +59,7 @@ const ContactContainer = () => {
 
   // ===== Handle Form Submit =====
   const handleFormSubmit = async (formData) => {
+    console.log(formData)
     try {
       setIsLoading(true);
       const response = await sendEmailService(formData);
@@ -89,7 +90,7 @@ const ContactContainer = () => {
   };
 
   return (
-    <Box sx={{ py: 10 }}>
+    <Box>
       {/* ===== Heading Section ===== */}
       <motion.div
         initial={{ opacity: 0, y: 60 }}
