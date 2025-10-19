@@ -42,6 +42,7 @@ import ShieldIcon from '@mui/icons-material/Shield';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import FinanceStats from '../components/aboutComponents/FinanceStats';
+import AssociatePartners from '../components/homeComponents/AssociatePartners';
 
 const HomeContainer = () => {
   const theme = useTheme();
@@ -169,6 +170,7 @@ const HomeContainer = () => {
       <AISection featureCards={featureCards} stackCards={stackCards} />
       <Stats stats={stats}/>
       <FinanceStats stats={financestats}/>
+      <AssociatePartners />
       {/* <QuickStats/> */}
       {/* <DeveloperTerminal/> */}
       {/* <GithubActivity/> */}

@@ -243,7 +243,8 @@ const Header = () => {
           {/* === Desktop Menu === */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 3 }}>
             {menuItems.map((item) => {
-              const isActive = currentPath === item.path;
+              // Handle both exact path match and root path redirect to home
+              const isActive = currentPath === item.path || (item.path === '/home' && currentPath === '/');
               
               if (item.hasDropdown) {
                 return (
@@ -363,7 +364,8 @@ const Header = () => {
       >
         <List>
           {menuItems.map((item) => {
-            const isActive = currentPath === item.path;
+            // Handle both exact path match and root path redirect to home
+            const isActive = currentPath === item.path || (item.path === '/home' && currentPath === '/');
             return (
               <ListItem key={item.label} disablePadding>
                 <ListItemButton
