@@ -212,7 +212,7 @@ export default function Hero() {
     {
       src: homeImage,
       alt: 'Dream Finance Home',
-      title: 'Welcome to Dream Finance and Real Estate',
+      title: 'Welcome to Dream Finance & Real Estate',
       subtitle: 'Your Financial and Real Estate Dreams, Our Priority',
       description: 'Experience premium financial services with personalized solutions tailored to your unique needs'
     },

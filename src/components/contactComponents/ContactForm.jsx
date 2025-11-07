@@ -150,7 +150,7 @@ export default function ContactForm({
                     mb: 1
                   }}
                 >
-                  Dream Finance and Real Estate
+                  Dream Finance & Real Estate
                 </Typography>
                 <Typography variant="h6" sx={{ color: 'text.secondary' }}>
                   Your Trusted Financial Partner and Real Estate Services Provider

@@ -248,7 +248,7 @@ const Footer = () => {
                 mb: 2,
               }}
             >
-              Dream Finance and Real Estate
+              Dream Finance & Real Estate
             </Typography>
             <Typography
               variant="body2"
@@ -433,7 +433,7 @@ const Footer = () => {
               textAlign: { xs: 'center', sm: 'left' },
             }}
           >
-            © {new Date().getFullYear()} Dream Finance and Real Estate. All Rights Reserved.
+            © {new Date().getFullYear()} Dream Finance & Real Estate. All Rights Reserved.
           </Typography>
           
           <Typography

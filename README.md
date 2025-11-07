@@ -1,4 +1,4 @@
-# Dream Finance and Real Estate
+# Dream Finance & Real Estate
 
 This project is a **React + Vite** based application built with scalability, maintainability, and performance in mind.
 
